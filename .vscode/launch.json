@@ -10,7 +10,7 @@
       "name": "hardhat test",
       "skipFiles": ["<node_internals>/**"],
       "runtimeExecutable": "npx",
-      "args": ["hardhat", "test", "contracts/6. Reentrance/Reentrance.test.ts"],
+      "args": ["hardhat", "test", "contracts/5. King/King.test.ts"],
       "cwd": "${workspaceFolder}"
     }
 	]
