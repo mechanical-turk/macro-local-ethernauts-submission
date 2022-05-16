@@ -1,9 +1,10 @@
 import { expect } from "chai";
+import { Contract } from "ethers";
 import { ethers } from "hardhat";
 import helper from "./CoinFlipHelper"
 
-let victim: any;
-let attacker: any;
+let victim: Contract;
+let attacker: Contract;
 
 describe("Attacking CoinFlip", function () {
   beforeEach(async () => {
